@@ -14,7 +14,7 @@ import utils
 import os
 
 # hack to set default wandb key if environment variable is set:
-WANDB_DEFAULT_KEY = os.getenv('WANDB_API_KEY', '<your_wandb_key>')
+WANDB_DEFAULT_KEY = os.getenv('WANDB_API_KEY', '19b0f4f62f9e1bf8852141ea0784457516b15a1a')
 
 #------------ General parameters -------------------------------
 Section('run', 'base run parameters').params(

@@ -86,4 +86,6 @@ class CelebA(datasets.base.DisentangledDataset):
 
         # no label so return 0 (note that can't return None because)
         # dataloaders requires so
-        return img, 0
+        # gt has at least 2 classes, and it should be an array
+        # return img, np.array([0, 0])
+        return img, np.random.randint(0, 2, size=2)

@@ -1,0 +1,30 @@
+run:
+    restore_from: continue
+    visualize: append
+    do: ["train", 'eval','visualize']
+    gpu_id: 0
+log:
+    project: sample_dent_runs
+    group: betatcvae_celeba
+    wandb_mode: run
+    level: info
+    wandb_allow_val_change: true
+data:
+    name: celeba
+    num_workers: 12
+train:
+    lr: 0.0005
+    batch_size: 64
+    epochs: 3
+    checkpoint_every: 1
+    checkpoint_first: 1
+    loss: betatcvae
+    rec_dist: bernoulli
+    supervision: none
+model:
+    name: vae_locatello
+vae_locatello:
+    latent_dim: 10
+eval:
+    batch_size: 1024
+    mode: all #change to last if only most recent checkpoint should be evaluated.

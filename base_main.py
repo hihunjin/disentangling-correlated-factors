@@ -20,8 +20,10 @@ import dent.utils
 import parameters
 import utils
 import utils.visualize
+from fastargs.config import Config
 
-def main(config):
+
+def main(config: Config):
     # Get logger.
     logger = utils.set_logger(__name__)
     # Set correct seed.

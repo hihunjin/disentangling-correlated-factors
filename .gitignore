@@ -1,0 +1,11 @@
+*__pycache__*
+*.jpg
+*.gif
+.vscode
+*.pkl
+results
+wandb
+*.h5
+*.npy
+correlated_disentanglement.egg-info
+data

@@ -1,0 +1,20 @@
+-f https://download.pytorch.org/whl/cu111/torch_stable.html
+# cudatoolkit==11.3
+torch==1.10.1+cu111
+torchvision==0.11.2+cu111
+numpy==1.23.1
+scipy==1.10.0
+imageio==2.19.3
+scikit-image==0.19.3
+scikit-learn
+pandas==1.5.2
+seaborn==0.12.2
+Pillow==9.3.0
+matplotlib
+fastargs==1.2.0
+timm
+wandb
+h5py
+terminaltables
+pyitlib==0.2.3
+submitit==1.4.5
